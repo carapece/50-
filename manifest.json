@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "五十音悬浮面板",
+    "version": "1.0",
+    "description": "随时查阅五十音并点击发音，提升日语学习效率",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["panel.css"]
+      }
+    ]
+  }
